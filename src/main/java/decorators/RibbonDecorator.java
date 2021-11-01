@@ -10,11 +10,11 @@ public class RibbonDecorator extends ItemDecorator {
     }
 
     public double getPrice(){
-        return (40 + item.getPrice());
+        return (40 + super.getPrice());
     }
 
     @Override
     public String getDescription() {
-        return super.getDescription();
+        return super.getDescription() + "(ribbon decor)";
     }
 }

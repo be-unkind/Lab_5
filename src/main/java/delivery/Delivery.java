@@ -1,5 +1,8 @@
 package delivery;
 
+import flowerstore.Item;
+import java.util.List;
+
 public interface Delivery {
-    boolean delivery(String delivery);
+    String delivery(List<Item> items);
 }

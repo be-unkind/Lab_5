@@ -6,9 +6,7 @@ import flowerstore.FlowerType;
 public class PayPalPaymentStrategy implements Payment{
 
     @Override
-    public boolean pay(double price) {
-        System.out.println("Paid " + price + " dollars with PayPal");
-        Flower flower = new Flower(FlowerType.TULIP);
-        return true;
+    public String pay(double price) {
+        return "Paid " + price + " dollars with PayPal";
     }
 }

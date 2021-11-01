@@ -1,10 +1,13 @@
 package delivery;
 
+import flowerstore.Item;
+import java.util.List;
+
 public class DHLDeliveryStrategy implements Delivery {
 
     @Override
-    public boolean delivery(String delivery) {
-        System.out.println("You have ordered post delivery");
-        return true;
+    public String delivery(List<Item> items) {
+
+        return "Your order " + items +" will be delivered by DHL";
     }
 }
